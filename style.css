@@ -1,0 +1,38 @@
+
+body{
+    background-color: darksalmon;
+}
+
+h1{
+    color: white;
+}
+
+#dominoes-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#dominoes-list li{
+    list-style-type: none;
+    font-size: 6rem;
+    color: black;
+    transition: transform 0.5s;
+}
+
+#dominoes-list .selected{
+    color: white;
+    filter: drop-shadow(0 0 0.25rem white);
+}
+
+.deleted {
+    display: none; /* Completely remove from the document flow! */
+}
+
+.hidden {
+    visibility: hidden; /* Keep element in the document flow, but make it invisible? */
+}
+
+#dominoes-list li:hover{
+    transform: scale(1.5);
+}
